@@ -5,11 +5,11 @@ steps:
 
 #Build the image 
 - name: 'eu.gcr.io/cloud-builders/docker'
-  args: ['build','-t','gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}','.']
+  args: ['build','-t','eu.gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}','.']
 
 #Push the image  
 - name: 'eu.gcr.io/cloud-builders/docker'
-  args: ['push','gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}']
+  args: ['push','eu.gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}']
   
 #Update the container image using kubectl set
 - name: 'eu.gcr.io/cloud-builders/kubectl'
