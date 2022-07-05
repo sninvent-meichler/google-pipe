@@ -17,7 +17,7 @@ steps:
   - 'set'
   - 'image'
   - 'deployment/${_DEPLOYMENTNAME}'
-  - '${_CONTAINERNAME}=eu.gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
+  - '${_IMAGENAME}=eu.gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
   - 'CLOUDSDK_CONTAINER_CLUSTER=${_GKE_CLUSTER}'
@@ -31,10 +31,11 @@ substitutions:
     #Repository Specific configuration. DevOps can change this settings
     _DEPLOYMENTNAME: google-pipe
     _CONTAINERNAME: google-pipe
+    _IMAGENAME: google-pipe-sha256-1
 #    _REPO_NAME: google-pipe
     
     # Developers ONLY change
-    _VERSION: v3.5
+    _VERSION: v3.6
     
 options:
     substitution_option: 'ALLOW_LOOSE'
