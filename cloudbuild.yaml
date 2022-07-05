@@ -30,7 +30,7 @@ substitutions:
     
     #Repository Specific configuration. DevOps can change this settings
     _DEPLOYMENTNAME: google-pipe
-    _CONTAINERNAME: google-pipe-service
+    _CONTAINERNAME: google-pipe
     _REPO_NAME: google-pipe
     
     # Developers ONLY change
