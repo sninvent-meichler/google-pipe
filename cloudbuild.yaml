@@ -20,13 +20,13 @@ steps:
   - '${_CONTAINERNAME}=eu.gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
-#  - 'CLOUDSDK_CONTAINER_CLUSTER=${_GKE_CLUSTER}'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=${_GKE_CLUSTER}'
   
 substitutions:
     #GCP Specific configuration. Please DON'T change anything
     _PROJECT: professional-education-354111
     _ZONE: europe-west3-a
-#    _GKE_CLUSTER: learn-gcp-with-mahesh-gke-cluster
+    _GKE_CLUSTER: cicd-pipe
     
     #Repository Specific configuration. DevOps can change this settings
     _DEPLOYMENTNAME: pipe-test
