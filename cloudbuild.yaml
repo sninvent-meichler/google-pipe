@@ -29,8 +29,8 @@ substitutions:
     _GKE_CLUSTER: cicd-pipe
     
     #Repository Specific configuration. DevOps can change this settings
-    _DEPLOYMENTNAME: google-pipe
-    _CONTAINERNAME: google-pipe    
+    _DEPLOYMENTNAME: google-pipe-service
+    _CONTAINERNAME: google-pipe-service
     _REPO_NAME: google-pipe
     
     # Developers ONLY change
